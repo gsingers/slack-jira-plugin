@@ -27,7 +27,9 @@ var config = {
       "REPLACE": "https://my.path.to.jira/browse/"
     },
     pattern: /((REPLACE_ME))-\d+/g,
-    post: true //If true, than post a new message instead of updating the current
+    post: true, //If true, than post a new message instead of updating the current
+    emoji: ":jira:",
+    link_separator: ", "// use \n if you want new lines
 
 };
 
