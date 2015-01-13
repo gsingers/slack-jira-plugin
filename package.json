@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "request": "~2.33.0",
-    "irc": "~0.3.6",
     "underscore": "^1.7.0",
     "node-slackbot": "0.0.6",
     "jira": "0.9.2"
