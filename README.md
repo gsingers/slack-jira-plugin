@@ -50,4 +50,5 @@ This will launch the bot in your terminal based on provided configuration.
 
 ## TODO:
 
-Deeper integration w/ the JIRA API
+- Deeper integration w/ the JIRA API
+- Optionally restrict to certain config'd channels
