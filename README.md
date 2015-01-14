@@ -50,7 +50,7 @@ This will launch the bot in your terminal based on provided configuration.
 
 - `token`: Your Slack API token, get your token at https://api.slack.com/
 - `jira_urls`: A mapping of JIRA project names to the URL that can display that JIRA issue, i.e. SOLR -> https://issues.apache.org/jira/browse/
-- `pattern`: A JS Regexp that can identify JIRA issues in text, e.g. /(SOLR)-\d+/g
+- `pattern`: A JS Regexp that can identify JIRA issues in text, e.g. /((SOLR)-\d+)/g
 
 ## TODO:
 
