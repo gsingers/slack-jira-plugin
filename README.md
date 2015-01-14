@@ -23,20 +23,21 @@ var config = {
     bot_name: "",//Provide the name to post under
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
     jira_urls: {
-      "APACHE": "https://issues.apache.org/jira/browse/",
-      "REPLACE": "https://my.path.to.jira/browse/"
+      "SOLR": "https://issues.apache.org/jira/browse/",
+      "GRANT": "http://grant.jira.server/jira/browse/",
+      "DEFAULT": "https://default.jira.server/browse/"
     },
-    pattern: /((REPLACE_ME))-\d+/g,
-    post: true, //If true, than post a new message instead of updating the current
+    // The first capturing group is the whole issue ID, the second group is the project name
+    pattern: /(?:\W|^)((SOLR|GRANT|BOB)-\d+)(?:(?!\W)|$)/g, //NOTE this assumes all JIRA issues are like: PROJECT-1234
+    post: true, //If true, than post a new message instead of updating the current message
+    verbose: true,
     emoji: ":jira:",
     link_separator: ", "// use \n if you want new lines
-
 };
 
-//DO NOT EDIT
+//DO NOT EDIT BELOW HERE
 var slackbot = new slackbot.Bot(config);
 slackbot.run();
-
 ```
 
 Save this to a file in the root of the project then run your bot with:
