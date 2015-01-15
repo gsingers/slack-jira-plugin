@@ -8,8 +8,7 @@ var config = {
       "GRANT": "http://grant.jira.server/jira/browse/",
       "DEFAULT": "https://default.jira.server/browse/"
     },
-    // The first capturing group is the whole issue ID, the second group is the project name  
-    pattern: /(?:\W|^)((SOLR|GRANT|BOB)-\d+)(?:(?!\W)|$)/g, //NOTE this assumes all JIRA issues are like: PROJECT-1234
+    projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],
     post: true, //If true, than post a new message instead of updating the current
     verbose: true,
     emoji: ":jira:",
