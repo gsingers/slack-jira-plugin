@@ -21,7 +21,7 @@ var slackbot = require('./lib/bot');
 
 var config = {
     bot_name: "",//Provide the name to post under
-    token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
+    token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', //get from https://api.slack.com/web#basics
     jira_urls: {
       "SOLR": "https://issues.apache.org/jira/browse/",
       "GRANT": "http://grant.jira.server/jira/browse/",
