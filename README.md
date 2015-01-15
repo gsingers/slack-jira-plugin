@@ -27,7 +27,6 @@ var config = {
       "GRANT": "http://grant.jira.server/jira/browse/",
       "DEFAULT": "https://default.jira.server/browse/"
     },
-    // The first capturing group is the whole issue ID, the second group is the project name
     projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],  // Replace these w/ a comma separated list of your project URLs., as in SOLR, LUCENE, etc.
     post: true, //If true, than post a new message instead of updating the current message
     verbose: true,
