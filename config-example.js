@@ -19,6 +19,7 @@ var config = {
       "DEFAULT": "https://default.jira.server/browse/"
     },
     projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],
+    post: true,
     verbose: true,
     emoji: ":jira:",
     link_separator: ", "// use \n if you want new lines
