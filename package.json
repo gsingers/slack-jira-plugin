@@ -28,7 +28,8 @@
     "request": "~2.33.0",
     "underscore": "^1.7.0",
     "node-slackbot": "0.0.6",
-    "jira": "0.9.2"
+    "jira": "0.9.2",
+    "q": "1.1.2"
   },
   "devDependencies": {},
   "bin": {
