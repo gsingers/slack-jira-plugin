@@ -18,3 +18,4 @@ build
 
 node_modules
 config.js
+config-jira.js

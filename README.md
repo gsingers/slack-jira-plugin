@@ -22,13 +22,22 @@ var slackbot = require('./lib/bot');
 var config = {
     bot_name: "",//Provide the name to post under
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', //get from https://api.slack.com/web#basics
+    jira: {
+      user: 'foo.bar',
+      password: 's3kR3t',
+      host: 'jira.foobar.com',
+      protocol: 'https',
+      port: 443,
+      version: '2',
+      strictSSL: true
+    },
+    showIssueDetails: true, //true if you want to expand w/ titles
     jira_urls: {
       "SOLR": "https://issues.apache.org/jira/browse/",
       "GRANT": "http://grant.jira.server/jira/browse/",
       "DEFAULT": "https://default.jira.server/browse/"
     },
     projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],  // Replace these w/ a comma separated list of your project URLs., as in SOLR, LUCENE, etc.
-    post: true, //If true, than post a new message instead of updating the current message
     verbose: true,
     emoji: ":jira:",
     link_separator: ", "// use \n if you want new lines

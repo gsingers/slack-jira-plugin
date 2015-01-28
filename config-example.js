@@ -19,7 +19,6 @@ var config = {
       "DEFAULT": "https://default.jira.server/browse/"
     },
     projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],
-    post: true, //If true, than post a new message instead of updating the current
     verbose: true,
     emoji: ":jira:",
     link_separator: ", "// use \n if you want new lines
