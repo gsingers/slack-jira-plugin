@@ -10,6 +10,7 @@ var config = {
       version: '2',
       strictSSL: true
     },
+    showIssueDetails: true,
     bot_name: "",//Provide the name to post under
     token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
     jira_urls: {
