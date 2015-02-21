@@ -25,7 +25,9 @@ var config = {
   post: true,
   verbose: true,
   emoji: ":jira:",
-  link_separator: ", "// use \n if you want new lines
+  link_separator: ", ",// use \n if you want new lines
+  command: "/jira",
+  command_token: "XXXXX" // from your /slack command integration
 };
 
 //DO NOT EDIT BELOW HERE
