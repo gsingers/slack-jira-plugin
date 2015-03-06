@@ -21,6 +21,8 @@ var config = {
     "GRANT": {url:"http://grant.jira.server/jira/browse/"},
     "DEFAULT": {url: "https://default.jira.server/browse/"}
   },
+  search_cmd: "search",
+  search_output_chan: "C02U1L9KZ",
   projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],
   post: true,
   verbose: true,
