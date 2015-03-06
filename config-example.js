@@ -22,7 +22,8 @@ var config = {
     "DEFAULT": {url: "https://default.jira.server/browse/"}
   },
   search_cmd: "search",
-  search_output_chan: "C02U1L9KZ",
+  //Since search results can be verbose, you may not want to muddy the channel
+  search_output_chan: "C02U1L9KZ",//if the value is "this", then the current channel will be used, else the name of a channel
   projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES"],
   post: true,
   verbose: true,
