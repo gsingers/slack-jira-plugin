@@ -3,20 +3,12 @@ var slackbot = require('./lib/bot');
 var config = {
 
   showIssueDetails: true,
+  showDetailsByDefault: true,//if true, you don't need the '+' to get details
   bot_name: "",//Provide the name to post under
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
   jira_urls: {
     "SOLR": {
-      url: "https://issues.apache.org/jira/browse/",
-      jira: {//OPTIONAL: provide access to jira credentials for a particular repository
-        user: 'foo.bar',
-        password: 's3kR3t',
-        host: 'jira.foobar.com',
-        protocol: 'https',
-        port: 443,
-        version: '2',
-        strictSSL: true
-      }
+      url: "https://issues.apache.org/jira/browse/"
     },
     "GRANT": {url:"http://grant.jira.server/jira/browse/"},
     "DEFAULT": {url: "https://default.jira.server/browse/"}
