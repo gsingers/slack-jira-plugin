@@ -21,7 +21,11 @@ var slackbot = require('./lib/bot');
 
 var config = {
   showIssueDetails: true,
-  issueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
+  basicIssueDetailsToShow: {'fields.summary': 1, 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
+  fullIssueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator': 1, 'fields.description': 1},
+  issueSeparator: "\n",
+  maxFieldLength: 100,
+  issueLabelSeparator: ": ",
   showDetailsByDefault: true,//if true, you don't need the '+' to get details
   bot_name: "jira",//Provide the name to post under
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
