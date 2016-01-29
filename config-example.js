@@ -5,11 +5,12 @@ var config = {
   showIssueDetails: true,
   basicIssueDetailsToShow: {'fields.summary':0 , 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
   fullIssueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator' : 1, 'fields.description': 1},
-  showDetailsByDefault: true,//if true, you don't need the '+' to get full details
+  showDetailsByDefault: true, //if true, you don't need the '+' to get details - instead use a '-' for fewer details
   issueSeparator: "\n",
   maxFieldLength: 100,
   issueLabelSeparator: ": ",
   bot_name: "jira",//Provide the name to post under
+  bot_id: "jira",//Provide the name to post under
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
   jira_urls: {
     // DEFAULT NODE IS REQUIRED.
