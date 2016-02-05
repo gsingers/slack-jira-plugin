@@ -9,8 +9,9 @@ var config = {
   issueSeparator: "\n",
   maxFieldLength: 100,
   issueLabelSeparator: ": ",
+  issueFieldSeparator: ": ",
   bot_name: "jira",//Provide the name to post under
-  bot_id: "jira",//Provide the name to post under
+  bot_id: "jira",//Provide the id of the bot to post under, if the name doesn't work for you
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
   jira_urls: {
     // DEFAULT NODE IS REQUIRED.
