@@ -1,6 +1,6 @@
-# Slack JIRA Plugin
+# Slack JIRA Bot Plugin
 
-JIRA integration with [slack](http://slack.com).  
+JIRA Bot integration with [slack](http://slack.com).  
 
 It does the following:
 
