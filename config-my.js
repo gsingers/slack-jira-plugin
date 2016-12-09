@@ -13,7 +13,7 @@ var config = {
   },
   showDetailsByDefault: true,//if true, you don't need the '+' to get details
   bot_name: "Bonnie",//Provide the name to post under
-  token: 'xoxb-95758839713-L3ndlZpblRmUHTTMOMMw6vfC', // https://api.slack.com/web
+  token: 'xxxxxxxxxxxxxxxxxxxxx', // https://api.slack.com/web
   jira_urls: {
     // DEFAULT NODE IS REQUIRED.
     "DEFAULT": {url: "https://appannie.atlassian.net/browse/"}, //https://appannie.atlassian.net/
@@ -21,8 +21,8 @@ var config = {
     "AR": {
       url: "https://appannie.atlassian.net/browse/",
       jira: {
-        user: 'xjiang-ext', // be sure to use the username, not the user email
-        password: 'jiangxu-041419-04141991',
+        user: 'xxxxxxx', // be sure to use the username, not the user email
+        password: 'xxxxxxxxx',
         host: 'appannie.atlassian.net',
         protocol: 'https',
         port: 443,
