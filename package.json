@@ -15,12 +15,7 @@
   "bugs": {
     "url": "https://github.com/gsingers/slack-jira-plugin/issues"
   },
-  "licenses": [
-    {
-      "type": "ASL",
-      "url": "https://github.com/gsingers/slack-jira-plugin/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "engines": {
     "node": "*"
   },
