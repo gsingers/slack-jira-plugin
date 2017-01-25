@@ -21,8 +21,12 @@ var slackbot = require('./lib/bot');
 
 var config = {
   showIssueDetails: true,
-  issueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
-  showDetailsByDefault: true,//if true, you don't need the '+' to get details
+  basicIssueDetailsToShow: {'fields.summary': 1, 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
+  fullIssueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator': 1, 'fields.description': 1},
+  issueSeparator: "\n",
+  maxFieldLength: 100,
+  issueLabelSeparator: ": ",
+  showDetailsByDefault: true, //if true, you don't need the '+' to get details - insteach use a '-' for fewer details
   bot_name: "jira",//Provide the name to post under
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
   jira_urls: {
@@ -72,7 +76,9 @@ This will launch the bot in your terminal based on provided configuration.
 ## Configuration
 
 - `token`: Your Slack API token, get your token at https://api.slack.com/web
-- `issueDetailsToShow`: Details from JIRA you want to be rendered in Slack
+- `basicIssueDetailsToShow`: Details from JIRA you want to be rendered in Slack, whenever the request for basic details is made
+- `fullIssueDetailsToShow`: Details from JIRA you want to be rendered in Slack, whenever the request for full details is made
+- `showDetailsByDefault`
 - `jira_urls`: A mapping of JIRA project names to the URL that can display that JIRA issue, i.e. SOLR -> https://issues.apache.org/jira/browse/
 - `projects`: A list of JIRA project names, as in SOLR, MAHOUT, LUCENE
 - `post`: If true, then post a new msg, else update the current one
@@ -80,6 +86,8 @@ This will launch the bot in your terminal based on provided configuration.
 - `custom_texts.messagePrefix`: An optional message that you can prefix at the beginning of the bot's message that will be posted
 - `emoji`: The emoji to use for the bot.  You may need to create a JIRA emoji for the current one to work, else replace w/ your favorite slack emoji
 - `link_separator`: The text to use to separate links in the response.
+- `issueFieldSeparator`: The text to use to separate each field in an issue in the response
+- `maxFieldLength`: Maximum length of a field in the response. N.B. The bot will truncate to the nearest word boundary BEFORE the nth character 
 
 ## TODO
 
