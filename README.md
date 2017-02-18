@@ -1,10 +1,9 @@
 # Slack JIRA Bot Plugin
 
-JIRA Bot integration with [slack](http://slack.com).  
+JIRA Bot integration with [slack](http://slack.com).  The bot automatically appends a link to a message whenever there is a mention of a JIRA issue in the message, for example:
 
-It does the following:
+![Sample screenshot of JIRABot in action](https://cloud.githubusercontent.com/assets/399372/23093176/ef3cf790-f5a9-11e6-9785-197edcef04d7.png)
 
-1. Automatically append a link to a message whenever there is a mention of a JIRA issue in the message
 
 ## Usage
 
