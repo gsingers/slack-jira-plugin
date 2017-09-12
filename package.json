@@ -22,7 +22,7 @@
   "dependencies": {
     "request": "~2.60.0",
     "underscore": "^1.7.0",
-    "node-slackbot": "0.0.6",
+    "node-slackbot": "0.0.8",
     "jira": "0.9.2",
     "q": "1.1.2"
   },

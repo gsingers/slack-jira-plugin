@@ -5,6 +5,7 @@ var config = {
   showIssueDetails: true,
   issueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
   showDetailsByDefault: true,//if true, you don't need the '+' to get details
+  minimalDisplay: false, // if true, don't add any titles or bolds or quote levels. Add summary inline after link.
   bot_name: "jira",//Provide the name to post under
   token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
   jira_urls: {
@@ -36,6 +37,7 @@ var config = {
     messagePrefix: "Hey, thought this might help: " //message you might like to prefix to JiraBot's post
   },
   emoji: ":jira:", // be sure to upload your custom emoji in slack
+  detailSeparator: " ", // default is \n. You can use anything else to customize (inline is the most common case)
   link_separator: ", ",// use \n if you want new lines
   error_channel: '' //the id of the channel to send low level log errors.  If not defined, will use the current channel
 };
