@@ -29,7 +29,7 @@ var config = {
   search_cmd: "search",
   //Since search results can be verbose, you may not want to muddy the channel
   search_output_chan: "C02U1L9KZ",//if the value is "this", then the current channel will be used, else the name of a channel
-  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "GRANT", "SOLR"],
+  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "GRANT", "SOLR"], // leave empty to include all projects
   post: true,
   verbose: true,
   custom_texts: {

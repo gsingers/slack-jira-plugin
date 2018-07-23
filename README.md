@@ -46,7 +46,7 @@ var config = {
   search_cmd: "search",
   //Since search results can be verbose, you may not want to muddy the channel
   search_output_chan: "C02U1L9KZ",//if the value is "this", then the current channel will be used, else the name of a channel
-  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "GRANT", "SOLR"],
+  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "GRANT", "SOLR"],  // Replace these w/ a comma separated list of your project URLs., as in SOLR, LUCENE, etc., or empty array to support all your projects.
   post: true,
   verbose: true,
   custom_texts: {
@@ -73,7 +73,7 @@ This will launch the bot in your terminal based on provided configuration.
 - `token`: Your Slack API token, get your token at https://api.slack.com/web
 - `issueDetailsToShow`: Details from JIRA you want to be rendered in Slack
 - `jira_urls`: A mapping of JIRA project names to the URL that can display that JIRA issue, i.e. SOLR -> https://issues.apache.org/jira/browse/
-- `projects`: A list of JIRA project names, as in SOLR, MAHOUT, LUCENE
+- `projects`: A list of JIRA project names, as in SOLR, MAHOUT, LUCENE, or empty to support all your projects
 - `post`: If true, then post a new msg, else update the current one
 - `verbose`: print logging info
 - `custom_texts.messagePrefix`: An optional message that you can prefix at the beginning of the bot's message that will be posted
